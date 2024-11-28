@@ -1,0 +1,142 @@
+.button--add {
+    position: absolute;
+    bottom: 4rem;
+    right: 2rem;
+    display: flex;
+    height: 5rem;
+    width: 5rem;
+    border: var(--border);
+    border-radius: 50%;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.75rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media screen and (min-width: 50em) {
+    .button--add {
+      right: 3rem;
+    }
+  }
+  
+  @media screen and (min-width: 80em) {
+    .button--add {
+      right: 4rem;
+    }
+  }
+  
+  .button--add:hover {
+    color: var(--text);
+    background-color: var(--accent-colour);
+  }
+
+  .table {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    border-spacing: 0;
+  }
+
+  .table__cell {
+    padding: 1.25rem 1rem;
+  }
+
+  .table__cell--header {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    border-bottom: var(--border);
+  }
+
+  .table__movieTitle {
+    font-weight: 600;
+  }
+  
+  .table__movieDirector {
+    font-size: 0.85em;
+  }
+
+  .table__link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .table__link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-colour);
+  }
+
+  .table__empty {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+
+.search-form {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+  margin: 20px 0;              
+  padding: 10px;
+  border-radius: 10px;        
+  background-color: #f0f0f000;   
+  max-width: 600px;            
+  margin-left: auto;          
+  margin-right: auto;         
+}
+
+
+.search-input {
+  padding: 10px;               
+  border: 1px solid #ccc;      
+  border-radius: 5px;          
+  font-size: 16px;             
+  width: 70%;                  
+  margin-right: 10px;         
+  background-color: #28a74600;   
+  color: #f56565;                
+  transition: border-color 0.3s ease, background-color 0.3s ease; 
+}
+
+
+.search-input:focus {
+  border-color: #007bff;       
+  outline: none;                
+  background-color: #21883700;    
+}
+
+
+.search-button {
+  padding: 10px 20px;          
+  border: none;                
+  border-radius: 5px;         
+  background-color: #28a74600;    
+  color: #f56565;                 
+  font-size: 16px;              
+  cursor: pointer;             
+  transition: background-color 0.3s ease;  
+}
+
+
+.search-button:hover {
+  background-color: #21883700;    
+}
+
+
+@media (max-width: 600px) {
+  .search-form {
+      flex-direction: column;   
+      padding: 15px;           
+  }
+
+  .search-input {
+      width: 100%;             
+      margin-bottom: 10px;     
+  }
+
+  .search-button {
+      width: 100%;              
+  }
+}
